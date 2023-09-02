@@ -13,6 +13,7 @@ public class Testing {
         System.out.println("Parameter valuye is " + browserName);
         WebDriver driver = null;
         if (browserName.contains("Chrome")) {
+
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         } else if (browserName.contains("Edge")) {
