@@ -15,6 +15,7 @@ public class Testing {
         if (browserName.contains("Chrome")) {
 
             WebDriverManager.chromedriver().setup();
+
             driver = new ChromeDriver();
         } else if (browserName.contains("Edge")) {
             WebDriverManager.edgedriver().setup();
